@@ -1,0 +1,13 @@
+//====================================================================================================
+.footer {
+    background: #e9ded4;
+    &__container {
+        padding-top: 40px;
+        padding-bottom: 72px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+    }
+}

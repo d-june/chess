@@ -1,0 +1,94 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 66px;
+	padding: 20px 49px;
+	max-width: 263px;
+	max-height: 72px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 130%;
+	text-align: center;
+	transition: all 0.3s ease-in-out 0s;
+
+	@media(max-width: $mobile) {
+		max-width: 100%;
+		padding: 18px 43px;
+		max-height: 47px;
+	}
+
+
+	&__black {
+		background: $darkColor;
+		color: #fff;
+		@media (any-hover: hover) {
+			&:hover {
+				background: $yellowColor;
+				color: $mainColor;
+			}
+		}
+	}
+
+	&__white {
+		border: 2px solid $darkColor;
+		background-color: transparent;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: $darkColor;
+				color: #fff;
+			}
+		}
+
+		@media(max-width: 1400px) {
+			background: #fff;
+			opacity: 0.9;
+			border: none;
+		}
+	}
+}
+
+.title {
+	
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 2.18px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 108%;
+	color: $greyColor;
+
+	@media(max-width: $mobile) {
+		gap: 7px;
+	}
+	
+
+	&__icons {
+		display: flex;
+		gap: 1.73px;
+		@media(max-width: $mobile) {
+			gap: 1.5px;
+		}
+	}
+
+	&__icon {
+		font-size: 31.8px;
+		@media(max-width: $mobile) {
+			font-size: 27px;
+		}
+	}
+
+	&__text {
+		font-weight: 700;
+	}
+
+	@media(max-width: $mobile) {
+		font-size: 14px;
+	}
+}
