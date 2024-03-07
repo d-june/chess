@@ -211,20 +211,24 @@
 //============================================================
 
 .about {
-    padding-top: 80px;
-    padding-bottom: 185px;
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-
-    @media(max-width: $tablet) {
-        padding-top: 48px;
-        padding-bottom: 120px;
-    }
+    &__wrapper {
+        padding-top: 80px;
+        padding-bottom: 185px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
     
-    @media(max-width: 991.98px) {
-        gap: 10px;
+        @media(max-width: $tablet) {
+            padding-top: 48px;
+            padding-bottom: 120px;
+    
+        }
+        
+        @media(max-width: 991.98px) {
+            gap: 10px;
+        }
     }
+   
     &__item {
         display: flex;
         align-items: center;
@@ -433,7 +437,10 @@
 
 .stages {
 
-  position: relative;
+    &__wrapper {
+        position: relative;
+    }
+
     &__top {
         display: inline-block;
         max-width: 806px;
@@ -555,7 +562,7 @@
   
         gap: 16px;
         padding: 20px;
-        background-image:  url('@img/opacity-background.png'), url('@img/player-background.png');
+        background-image:  url('../img/opacity-background.png'), url('../img/player-background.png');
         @media(max-width: $tablet) {
             width: 100%;
 
@@ -675,10 +682,10 @@
             max-width: 400px;
             transform: rotate(-3deg);
         }
-        @media(max-width: 610px) {
-            left: 40px;
+        @media(max-width: $mobile) {
+            left: 20px;
             top: 27.5%;
-            max-width: 340px;
+            width: 340px;
             transform: rotate(-3deg);
         }
     }
@@ -687,16 +694,20 @@
 //========================================================
 
 .participants {
-    padding-top: 200px;
-    padding-bottom: 140px;
-
-    @media(max-width: $tablet) {
-        padding-top: 122px;
-        padding-bottom: 102px;
-    }
     &__container {
         overflow: hidden;
     }
+    &__wrapper {
+        padding-top: 200px;
+        padding-bottom: 140px;
+    
+        @media(max-width: $tablet) {
+            padding-top: 122px;
+            padding-bottom: 102px;
+        }
+    }
+    
+   
 
     &__items {
         display: flex;
